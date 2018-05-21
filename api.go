@@ -48,13 +48,15 @@ func (m Mpesa) authenticate() (string, error) {
 
 	client := &http.Client{Timeout: 10 * time.Second}
 	response, err := client.Do(request)
+	if response != nil {
+		defer response.Body.Close()
+	}
 	if err != nil {
 		return "", err
 	}
 
 	var authResponse authResponse
 	json.NewDecoder(response.Body).Decode(&authResponse)
-	defer response.Body.Close()
 
 	accessToken := authResponse.AccessToken
 	log.Println("Received access_token: ", accessToken)
@@ -239,12 +241,14 @@ func (m Mpesa) newStringRequest(url string, body []byte, headers map[string]stri
 
 	client := &http.Client{Timeout: 10 * time.Second}
 	response, err := client.Do(request)
+	if response != nil {
+		defer response.Body.Close()
+	}
 	if err != nil {
 		return "", err
 	}
 
 	respBody, err := ioutil.ReadAll(response.Body)
-	defer response.Body.Close()
 	if err != nil {
 		return "", err
 	}
