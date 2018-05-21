@@ -1,4 +1,4 @@
-# MPESA Golang API Wrapper  [![CircleCI](https://circleci.com/gh/AndroidStudyOpenSource/mpesa-api-go.svg?style=shield)](https://circleci.com/gh/AndroidStudyOpenSource/mpesa-api-go)
+# MPESA Golang API Wrapper  [![CircleCI](https://circleci.com/gh/twigaeng/mpesa-api-go.svg?style=shield)](https://circleci.com/gh/twigaeng/mpesa-api-go)
 
 The wrapper provides convenient access to the [Safaricom MPESA Daraja API](https://developer.safaricom.co.ke/apis-explorer) for applications written in server-side Golang. :rocket:
 
@@ -6,7 +6,7 @@ The wrapper provides convenient access to the [Safaricom MPESA Daraja API](https
 You can install the package by running:
 
 ```
-go get github.com/AndroidStudyOpenSource/mpesa-api-go
+go get github.com/twigaeng/mpesa-api-go
 ```
 
 ## Usage
@@ -28,7 +28,7 @@ package main
 
 import (
 	"log"
-	"github.com/AndroidStudyOpenSource/mpesa-api-go"
+	"github.com/twigaeng/mpesa-api-go"
 )
 
 const (
@@ -76,7 +76,7 @@ package main
 
 import (
 	"log"
-	"github.com/AndroidStudyOpenSource/mpesa-api-go"
+	"github.com/twigaeng/mpesa-api-go"
 )
 
 const (
@@ -113,7 +113,7 @@ package main
 
 import (
 	"log"
-	"github.com/AndroidStudyOpenSource/mpesa-api-go"
+	"github.com/twigaeng/mpesa-api-go"
 )
 
 const (
@@ -152,7 +152,7 @@ package main
 
 import (
 	"log"
-	"github.com/AndroidStudyOpenSource/mpesa-api-go"
+	"github.com/twigaeng/mpesa-api-go"
 )
 
 const (
@@ -196,7 +196,7 @@ package main
 
 import (
 	"log"
-	"github.com/AndroidStudyOpenSource/mpesa-api-go"
+	"github.com/twigaeng/mpesa-api-go"
 )
 
 const (
@@ -243,7 +243,7 @@ package main
 
 import (
 	"log"
-	"github.com/AndroidStudyOpenSource/mpesa-api-go"
+	"github.com/twigaeng/mpesa-api-go"
 )
 
 const (
@@ -288,7 +288,7 @@ package main
 
 import (
 	"log"
-	"github.com/AndroidStudyOpenSource/mpesa-api-go"
+	"github.com/twigaeng/mpesa-api-go"
 )
 
 const (
