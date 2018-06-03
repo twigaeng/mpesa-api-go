@@ -231,7 +231,7 @@ func (s Service) BalanceInquiry(balanceInquiry BalanceInquiry) (string, error) {
 	headers["cache-control"] = "no-cache"
 	headers["postman-token"] = "2aa448be-7d56-a796-065f-b378ede8b136"
 
-	url := s.baseURL() + "safaricom/accountbalance/v1/query"
+	url := s.baseURL() + "mpesa/accountbalance/v1/query"
 	return s.newStringRequest(url, body, headers)
 }
 
